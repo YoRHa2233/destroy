@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="../jQuery/jQuery.mini.js"></script>
+</head>
+<body>
+    <div class="zhuti" id="app">
+        <div class="login_box">
+            <div class="title">注册</div>
+            <div class="phone">
+                <input type="tel" id="input" class="form-control" required="required" title="" placeholder="手机号码">
+            </div>
+            <div class="userName">
+                <input type="text" class="form-control" id="" placeholder="填写昵称">
+            </div>
+            <span class="passWord_woring">密码至少8位，包含数字、字母大小写、特殊字符</span>
+            <div class="passCode">
+                <input :type="pwdFlag?'password':'text'" id="input" class="form-control passWord" required="required" maxlength="20" placeholder="密码">
+                <button class="forget" @click="changePwd">{{ pwdFlag?textIcon:pwdIcon }}</button>
+            </div>
+            <div class="verification">
+                <input type="text" class="form-control" placeholder="输入验证码">
+            </div>
+            <div class="to_signup">
+                <a href="#">注册</a>
+            </div>
+            <span class="user_agree">注册即代表同意服务协议和隐私政策</span>
+            <span class="no_user">已有账户。<a href="login.html">登陆</a></span>
+        </div>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                pwdFlag: true,
+                textIcon: '显示',
+                pwdIcon: '隐藏',
+                pwdText: ''
+            },
+            methods: {
+                changePwd: function() {
+                    if (this.pwdFlag) {
+                        this.pwdFlag = false;
+                    } else {
+                        this.pwdFlag = true;
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

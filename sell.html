@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sell.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="../jQuery/jQuery.mini.js"></script>
+</head>
+
+<body>
+  <div class="tab w" id="table">
+    <!-- 头部导航 -->
+    <div class="tab_head w">
+      <div class="xuanxiang"><a href="index.html"><span class="words">首页</span></a></div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(1)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">发现</span></a>
+        <ul v-show="navIndex == 1">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="hotpice.html"><span
+                class="words">热门</span></a></li>
+          <li><a href="hotpice.html"><span class="words">排名上升</span></a></li>
+          <li><a href="hotpice.html"><span class="words">新作</span></a></li>
+          <li><a href="hotpice.html"><span class="words">编辑推荐</span></a></li>
+          <li><a href="hotpice.html"><span class="words">影集</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="hotpice.html"><span
+                class="words">专栏</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(2)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">摄影师</span></a>
+        <ul v-show="navIndex == 2">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="grapher.html"><span
+                class="words">推荐摄影师</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="grapher.html"><span
+                class="words">推荐点评人</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="xuanxiang"><a href="buluo.html"><span class="words">部落</span></a></div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(4)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">活动</span></a>
+        <ul v-show="navIndex == 4">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="#"><span
+                class="words">大赛</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="#"><span
+                class="words">任务</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(5)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">售图</span></a>
+        <ul v-show="navIndex == 5">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="sell.html"><span
+                class="words">关于售图</span></a></li>
+          <li><a href="sell.html"><span class="words">如何签约</span></a></li>
+          <li><a href="sell.html"><span class="words">图库要求</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="sell.html"><span
+                class="words">稿费收益</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="theUser">
+        <div class="login_box">
+          <a class="login" href="login.html">登陆</a>
+        </div>
+        <div class="signup_box">
+          <a class="signup" href="signup.html">注册</a>
+        </div>
+      </div>
+    </div>
+    <!-- 头部导航结束 -->
+    <!-- 页面主体 -->
+    <div class="tab_li w">
+      <div class="item item1">
+        <div class="index_Img">
+          <img :src="imgArr[2]" alt="">
+          <div class="index_Img_hello">
+            <span class="index_Img_hello_say">让优秀作品创造价值！</span>
+            <a href="login.html" class="index_Img_hello_login">马上注册</a>
+          </div>
+        </div>
+
+        <div class="sell_box">
+          <div class="sell_left">
+            <div class="floor1">
+              <img src="images/sell1.png" alt="">
+            </div>
+            <div class="floor2">
+              <img src="images/sell2.png" alt="">
+            </div>
+          </div>
+          <div class="sell_right">
+            <div class="part1">
+              <h2>注册、上传、销售，轻松一步搞定</h2>
+              <p>社区分享与投稿一步完成，轻松查询编审状态</p>
+            </div>
+            <div class="part2">
+              <h2>覆盖全球市场，让世界看见你的精彩</h2>
+              <p>在500px供稿VCG图库，专业销售平台精准推送庞大客户群，为每张图片寻找合适的买家</p>
+            </div>
+            <div class="part3">
+              <h2>版权保护为每一个创作者保驾护航</h2>
+              <p>一站式维权服务，为你的作品保驾护航</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sale_step_container">
+          <h2 class="sale_step_header">注册、上传、销售</h2>
+          <div class="sale_step_list">
+            <div class="sale_step_card register">
+              <h5>注册</h5>
+              <p>注册：成为500px用户</p>
+            </div>
+            <div class="sale_step_card upload">
+              <h5>上传</h5>
+              <p>分享作品并投稿到图库</p>
+            </div>
+            <div class="sale_step_card sign">
+              <h5>签约</h5>
+              <p>实名认证在线签约</p>
+            </div>
+            <div class="sale_step_card sale">
+              <h5>销售</h5>
+              <p>全球市场轻松收益</p>
+            </div>
+          </div><a href="signup.html" class="primary_button"
+            style="margin: 40px auto 50px; display: block; width: 258px;">马上注册</a>
+        </div>
+
+        <div class="q_a_container">
+          <div class="q_a_header">常见问题</div>
+          <div class="q_a_content">
+            <div class="content_part">
+              <h5>签约供稿</h5><a href="#">如何签约</a><a href="#">如何供稿</a><a href="#">什么是独家合作</a>
+            </div>
+            <div class="content_part">
+              <h5>稿费收益</h5><a href="#">稿费发放周期</a><a href="#">稿费发放方式</a><a href="#">相关个人所得税</a>
+            </div>
+            <div class="content_part">
+              <h5>内容要求</h5><a href="/#">图片标准</a><a href="#">视频标准</a><a href="#">更多问题</a>
+            </div>
+          </div><a href="#" class="plain_button" style="margin: 0px auto; display: block; width: 258px;">了解更多</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面主体结束 -->
+  </div>
+  <script>
+    var table = new Vue({
+      el: '#table',
+      data: {
+        imgArr: [
+          "images/index_img1.jpeg",
+          "images/buluo.png",
+          "upload/47.jpeg"
+        ],
+        navIndex: 0,
+      },
+      methods: {
+        navmouseover: function (index) {
+          this.navIndex = index;
+        },
+        navmouseout: function (index) {
+          this.navIndex = index;
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,850 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?hlq82r');
+  src: url('../fonts/icomoon.eot?hlq82r#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?hlq82r') format('truetype'),
+    url('../fonts/icomoon.woff?hlq82r') format('woff'),
+    url('../fonts/icomoon.svg?hlq82r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* 版心 */
+.w {
+  width: 100%;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tab {
+  height: auto;
+}
+
+.tab_head {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 0.9rem;
+  padding: 0 0.6rem;
+  background-color: white;
+}
+
+.tab_head .xuanxiang {
+  float: left;
+  width: 1rem;
+  height: 0.9rem;
+}
+
+.tab_head div a {
+  display: block;
+  text-decoration: none;
+  width: 1rem;
+  height: 0.9rem;
+}
+
+.tab_head div a .words {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 0.9rem;
+  font-size: .2133rem;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+}
+
+.tab_li {
+  z-index: 1;
+  position: relative;
+}
+
+.tab_li .item {
+  width: 100%;
+}
+
+.tab_head .theUser {
+  float: right;
+  width: 2.5rem;
+  height: 0.9rem;
+}
+
+.tab_head .theUser .login_box {
+  float: left;
+  width: 1rem;
+  height: 0.9rem;
+}
+
+.tab_head .theUser .signup_box {
+  float: left;
+  width: 1.5rem;
+  height: 0.9rem;
+}
+
+.tab_head .theUser .signup {
+  height: .4rem;
+  width: 1rem;
+  text-align: center;
+  margin-top: .2933rem;
+  font-size: .2267rem;
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+  border: 2px solid black;
+  border-radius: 16px;
+}
+
+.tab_head .theUser .login {
+  height: .4rem;
+  width: .6rem;
+  margin-top: .32rem;
+  font-size: .2267rem;
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+}
+
+/* 下拉菜单 */
+.tab_head .xuanxiang a {
+  text-decoration: none;
+  width: 1rem;
+  height: 0.9rem;
+}
+
+.tab_head .xuanxiang ul {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 0.14rem;
+}
+
+.tab_head .xuanxiang .triangle {
+  position: absolute;
+  top: -0.1067rem;
+  left: 0.4rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  transform: rotateZ(45deg);
+}
+
+.tab_head div ul li {
+  overflow: hidden;
+  list-style: none;
+  width: 0.98rem;
+  height: 0.4666rem;
+}
+
+.tab_head div ul li a {
+  display: block;
+  text-decoration: none;
+  width: 1.04rem;
+  height: 0.4667rem;
+}
+
+.tab_head div ul li a .words {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  line-height: 0.4667rem;
+  font-size: .2133rem;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+}
+
+.tab_head .xuanxiang a .to_More::after {
+  content: '\ea50';
+  font-family: 'icomoon';
+  line-height: 100%;
+  transition: all .2s linear;
+}
+
+
+/* 部落页面 */
+.tab_li .item4 .index_Img {
+  position: relative;
+  width: 100%;
+  height: 8rem;
+}
+
+.tab_li .item4 .index_Img img {
+  width: 100%;
+  height: 8rem;
+}
+
+.tab_li .item4 .index_Img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/bolang.png);
+}
+
+.tab_li .item4 .index_Img .index_Img_hello {
+  z-index: 1;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  width: 30%;
+  height: 50%;
+}
+
+.tab_li .item4 .index_Img .index_Img_hello .index_Img_hello_say {
+  display: block;
+  width: 100%;
+  height: 40%;
+  font-size: 45px;
+  line-height: 100%;
+  font-weight: 900;
+  color: white;
+}
+
+.tab_li .item4 .index_Img .index_Img_hello p {
+  font-size: 16px;
+  color: white;
+}
+
+.tab_li .item4 .buluo_box {
+  padding: .2667rem 3% 0;
+  width: 100%;
+  height: 6.8267rem;
+}
+
+.tab_li .item4 .buluo_box .buluo_left,
+.buluo_right {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.tab_li .item4 .buluo_box .buluo_left {
+  position: relative;
+}
+
+.tab_li .item4 .buluo_box .buluo_left .floor1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.9467rem;
+  height: 4.9467rem;
+}
+
+.tab_li .item4 .buluo_box .buluo_left .floor2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 4.9467rem;
+  height: 4.9467rem;
+}
+
+.tab_li .item4 .buluo_box .buluo_right .part1,
+.part2 {
+  padding-left: 100px;
+  width: 100%;
+  height: 50%;
+}
+
+.tab_li .item4 .buluo_box .buluo_right .part1 div {
+  width: 4.72rem;
+}
+
+.tab_li .item4 .buluo_box .buluo_right h2 {
+  height: .56rem;
+  font-size: .4rem;
+  font-weight: 600;
+  line-height: .56rem;
+  margin: 0 0 20px;
+  color: black;
+}
+
+.tab_li .item4 .buluo_box .buluo_right p {
+  height: .32rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: .32rem;
+  margin: 0 0 10px;
+}
+
+.tab_li .item4 .buluo_box .buluo_right h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0870d1;
+  line-height: 28px;
+  margin: 0 0 10px;
+}
+
+/* 部落榜单 */
+.tab_li .item4 .buluo_top {
+  width: 100%;
+  margin: 100px 0;
+  padding: 0 3%;
+}
+
+.tab_li .item4 .buluo_top h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: .56rem;
+  font-size: .4rem;
+  font-weight: 600;
+  line-height: .56rem;
+  margin: 0 0 20px;
+  color: black;
+}
+
+.tab_li .item4 .buluo_top .buluo_top10 {
+  width: 100%;
+  background-color: #f7f8fa;
+}
+
+.tab_li .item4 .buluo_top10 .buluo_li {
+  display: flex;
+  margin: .9333rem 5% 0;
+  width: 90%;
+  height: 1.7333rem;
+}
+
+.tab_li .item4 .buluo_li .buluo_name {
+  display: flex;
+  flex-grow: 3;
+  flex-shrink: 1;
+  flex-basis: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 6.1333rem;
+  height: 1.4933rem;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.tab_li .item4 .buluo_li .buluo_name a img {
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 16px;
+  width: 1.4933rem;
+  height: 1.4933rem;
+}
+
+.tab_li .item4 .buluo_li .buluo_name .buluo_name_more {
+  width: 4.4133rem;
+  height: 1.0533rem;
+}
+
+.tab_li .item4 .buluo_li .buluo_name .buluo_name_more .buluo_name_warpper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 6px;
+}
+
+.tab_li .item4 .buluo_li .buluo_name_warpper .to_mark {
+  display: inline-block;
+  width: .76rem;
+  flex-basis: .76rem;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ccc;
+  line-height: 20px;
+  border-radius: 10px;
+  background-color: #0870d1;
+  margin-right: 6px;
+}
+
+.tab_li .item4 .buluo_li .buluo_name_warpper .buluo_name_name {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  line-height: 24px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.tab_li .item4 .buluo_li .buluo_name .buluo_name_more .buluo_info {
+  font-size: 14px;
+  font-weight: 400;
+  color: #525558;
+  line-height: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  margin: 0 0 12px;
+}
+
+.tab_li .item4 .buluo_li .buluo_name .buluo_name_more .buluo_data {
+  font-style: 12px;
+  font-weight: 400;
+  color: #6d7378;
+  line-height: 17px;
+}
+
+.tab_li .item4 .buluo_li .buluo_name .buluo_name_more .buluo_data span {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+.tab_li .item4 .buluo_li .buluo_photo {
+  max-width: 770px;
+  height: 130px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.tab_li .item4 .buluo_li .buluo_photo .works_item {
+  display: inline-block;
+  width: fit-content;
+  height: 100%;
+  margin: 0 6px 0 0;
+}
+
+.tab_li .item4 .buluo_li .buluo_photo .works_item img {
+  width: 130px;
+  height: 130px;
+}
+
+/* 推荐部落 */
+.tribe_list_container {
+  width: 100%;
+  background: #fff;
+  padding: 0 3% 92px;
+  box-sizing: border-box;
+}
+
+.tribe_list_container .tribe_list_content,
+.tribe_list_container .tribe_list_header {
+  width: 1240px;
+}
+
+.tribe_list_container .tribe_list_header {
+  width: 100%;
+  padding: 85px 0 0;
+  margin: 0 auto;
+}
+
+.tribe_list_container .tribe_list_header .header_inner {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.tribe_list_container .tribe_list_content {
+  width: 100%;
+  margin: 12px auto 0;
+}
+
+.tribe_list_container .tribe_list_header .tribe_list_tab {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 20px 0 0;
+  float: left;
+}
+
+.tribe_list_container .tribe_list_header .tribe_list_tab .tab_item.active {
+  color: #0870d1;
+  border-bottom: 2px solid #0870d1;
+}
+
+.tribe_list_container .tribe_list_header .tribe_list_tab .tab_item {
+  width: fit-content;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #6d7378;
+  line-height: 22px;
+  text-align: center;
+  padding: 9px 1px 7px;
+  border-bottom: 2px solid transparent;
+  margin: 0 28px 0 0;
+  cursor: pointer;
+}
+
+.m_module,
+.r_module {
+  width: 400px;
+  height: 380px;
+  background: #fff;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 15%);
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+  margin-left: 6.5px;
+  margin-right: 6.5px;
+}
+
+.m_module .top-stamp-region,
+.r_module .top-stamp-region {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.m_module .guest,
+.r_module .guest {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  padding-top: 29px;
+  padding-left: 25px;
+}
+
+.m_module .guest .portrait,
+.r_module .guest .portrait {
+  float: left;
+  position: relative;
+  margin-right: 19px;
+}
+
+.m_module .guest .portrait a,
+.r_module .guest .portrait a {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  position: relative;
+}
+
+.m_module .guest .portrait .avatar,
+.r_module .guest .portrait .avatar {
+  border-radius: 45px;
+  height: 90px;
+  width: 90px;
+}
+
+.m_module .info,
+.r_module .info {
+  display: inline-block;
+  padding-top: 7px;
+  width: 230px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+}
+
+.m_module .info .name,
+.r_module .info .name {
+  color: #3b3d3f;
+  margin-bottom: 5px;
+}
+
+.m_module .info .name a,
+.r_module .info .name a {
+  display: inline-block;
+}
+
+.m_module .info .watchword,
+.r_module .info .watchword {
+  height: 20px;
+  font-size: 14px;
+  color: #525558;
+  margin-bottom: 5px;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tribe_list_container .tribe_list_header .all_btn {
+  display: inline-block;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #0870d1;
+  line-height: 30px;
+  cursor: pointer;
+  margin: 5px 0;
+  float: right;
+}
+
+.tribe_list_container .tribe_list_header .next_btn {
+  display: inline-block;
+  font-size: 14px;
+  font-family: PingFangSC;
+  color: #222;
+  line-height: 30px;
+  margin: 5px 30px 5px 0;
+  float: right;
+  cursor: pointer;
+}
+
+.m_module .info li,
+.r_module .info li {
+  float: left;
+  font-size: 12px;
+  color: #cbd0d4;
+  padding-top: 0;
+  margin-right: 15px;
+}
+
+.m_module .info li span:last-child,
+.r_module .info li span:last-child {
+  margin-left: 4px;
+}
+
+.m_module .works,
+.r_module .works {
+  clear: left;
+  margin-top: 30px;
+  margin-left: 22px;
+  font-size: 0;
+}
+
+.m_module .works li,
+.r_module .works li {
+  float: left;
+  padding-right: 4px;
+}
+
+.m_module .works li a,
+.r_module .works li a {
+  display: inline-block;
+}
+
+.m_module .works li:first-child .tribe-img,
+.r_module .works li:first-child .tribe-img {
+  width: 176px;
+  height: 176px;
+}
+
+.central_banner {
+  width: 100%;
+  height: 341px;
+  box-sizing: border-box;
+  padding: 24px;
+  background: url(../images/buluo111.png) no-repeat 50%;
+  background-size: auto 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.central_banner .central_banner_title {
+  font-size: 30px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #fff;
+  line-height: 42px;
+  margin: 0 120px 0 0;
+}
+
+.central_banner .central_banner_qr_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 120px;
+}
+
+.central_banner .central_banner_qr_box .qr_code {
+  width: 140px;
+  height: 140px;
+  margin: 0 0 20px;
+}
+
+.central_banner .central_banner_qr_box .qr_code img {
+  width: 100%;
+  height: 100%;
+}
+
+.central_banner .central_banner_qr_box span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 20px;
+}
+
+.tribe_activity_container {
+  width: 100%;
+  background: #fff;
+  padding: 80px 24px;
+  box-sizing: border-box;
+}
+
+.tribe_activity_container .tribe_activity_header {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto 24px;
+}
+
+.tribe_activity_container .tribe_activity_header h2 {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #222;
+  line-height: 60px;
+}
+
+.tribe_activity_container .tribe_activity_header h2 .next_btn {
+  display: inline-block;
+  font-size: 14px;
+  font-family: PingFangSC;
+  color: #222;
+  line-height: 30px;
+  margin: 5px 0;
+  position: absolute;
+  right: 0;
+  top: 18px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.tribe_activity_container .tribe_activity_list {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tribe_activity_container .tribe_activity_list .tribe_activity {
+  display: inline-block;
+  width: 32%;
+  height: 228px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.tribe_activity_container .tribe_activity_list .tribe_activity .tribe_activity_info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.tribe_activity_container .tribe_activity_list .tribe_activity .tribe_activity_info .tribe_activity_title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 37px;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tribe_activity_container .tribe_activity_list .tribe_activity .tribe_activity_info .tribe_activity_desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 22px;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.q_a_container {
+  width: 100%;
+  background: #f7f8fa;
+}
+
+.q_a_container .q_a_header {
+  width: 100%;
+  height: 118px;
+  font-size: 30px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #222;
+  line-height: 118px;
+  margin: 0;
+  text-align: center;
+}
+
+.q_a_container .q_a_content {
+  width: 100%;
+  height: 427px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+  padding: 104px 24px 24px;
+  box-sizing: border-box;
+  background-color: #45457c;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  background-image: url(../images/question.png);
+}
+
+.q_a_container .q_a_content .content_part {
+  color: #fff;
+  width: 430px;
+  margin: 0 90px 0 0;
+}
+
+.q_a_container .q_a_content .content_part h5 {
+  font-size: 16px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #fff;
+  line-height: 28px;
+  margin: 0 0 24px;
+}
+
+.q_a_container .q_a_content .content_part h5 span {
+  margin: 0 12px 0 0;
+}
+
+.q_a_container .q_a_content .content_part p {
+  padding: 0 0 0 26px;
+  margin: 0 0 16px;
+}
+
+.q_a_container .q_a_content .content_part {
+  color: #fff;
+  width: 430px;
+  margin: 0 90px 0 0;
+}
+
+.q_a_container .q_a_content .content_part>span,
+.q_a_container .q_a_content .content_part p {
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #fff;
+  line-height: 24px;
+}

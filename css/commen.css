@@ -1,0 +1,615 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?hlq82r');
+  src: url('../fonts/icomoon.eot?hlq82r#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?hlq82r') format('truetype'),
+    url('../fonts/icomoon.woff?hlq82r') format('woff'),
+    url('../fonts/icomoon.svg?hlq82r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* 版心 */
+.w {
+  width: 100%;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tab {
+  height: auto;
+}
+
+.tab_head {
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 0.9rem;
+  padding: 0 0.6rem;
+  background-color: white;
+}
+
+.tab_head .xuanxiang {
+  float: left;
+  width: 1rem;
+  height: 0.9rem;
+}
+
+.tab_head div a {
+  display: block;
+  text-decoration: none;
+  width: 1rem;
+  height: 0.9rem;
+}
+
+.tab_head div a .words {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 0.9rem;
+  font-size: .2133rem;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+}
+
+.tab_li {
+  z-index: 1;
+  position: relative;
+}
+
+.tab_li .item {
+  width: 100%;
+}
+
+.tab_head .theUser {
+  float: right;
+  width: 2.5rem;
+  height: 0.9rem;
+}
+
+.tab_head .theUser .login_box {
+  float: left;
+  width: 1rem;
+  height: 0.9rem;
+}
+
+.tab_head .theUser .signup_box {
+  float: left;
+  width: 1.5rem;
+  height: 0.9rem;
+}
+
+.tab_head .theUser .signup {
+  height: .4rem;
+  width: 1rem;
+  text-align: center;
+  margin-top: .2933rem;
+  font-size: .2267rem;
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+  border: 2px solid black;
+  border-radius: 16px;
+}
+
+.tab_head .theUser .login {
+  height: .4rem;
+  width: .6rem;
+  margin-top: .32rem;
+  font-size: .2267rem;
+  font-weight: 700;
+  color: rgb(34, 34, 34);
+}
+
+/* 下拉菜单 */
+.tab_head .xuanxiang a {
+  text-decoration: none;
+  width: 1rem;
+  height: 0.9rem;
+}
+
+.tab_head .xuanxiang ul {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 0.14rem;
+}
+
+.tab_head .xuanxiang .triangle {
+  position: absolute;
+  top: -0.1067rem;
+  left: 0.4rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  transform: rotateZ(45deg);
+}
+
+.tab_head div ul li {
+  overflow: hidden;
+  list-style: none;
+  width: 0.98rem;
+  height: 0.4666rem;
+}
+
+.tab_head div ul li a {
+  display: block;
+  text-decoration: none;
+  width: 1.04rem;
+  height: 0.4667rem;
+}
+
+.tab_head div ul li a .words {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  line-height: 0.4667rem;
+  font-size: .2133rem;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+}
+
+.tab_head .xuanxiang a .to_More::after {
+  content: '\ea50';
+  font-family: 'icomoon';
+  line-height: 100%;
+  transition: all .2s linear;
+}
+
+/* .tab_head .xuanxiang a .to_More {
+    transform: rotateZ(90deg);
+} */
+
+/* 页面主体 */
+
+.tab_li .item1 .index_Img {
+  position: relative;
+  width: 100%;
+  height: 6.6667rem;
+}
+
+.tab_li .item1 .index_Img img {
+  width: 100%;
+  height: 6.6667rem;
+}
+
+.tab_li .item1 .index_Img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/bolang.png);
+}
+
+.tab_li .item1 .index_Img .index_Img_hello {
+  z-index: 1;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  width: 30%;
+  height: 50%;
+}
+
+.tab_li .item1 .index_Img .index_Img_hello .index_Img_hello_say {
+  display: block;
+  width: 100%;
+  height: 40%;
+  font-size: 45px;
+  line-height: 100%;
+  font-weight: 900;
+  color: white;
+}
+
+.tab_li .item1 .index_Img .index_Img_hello .index_Img_hello_login {
+  display: block;
+  width: 2.9333rem;
+  height: .8667rem;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: .8667rem;
+  padding: 0 .1333rem;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: .4533rem;
+}
+
+.tab_li .item1 .publicize {
+  margin-top: .2667rem;
+  height: 4.1rem;
+}
+
+.tab_li .item1 .publicize .publicize_words {
+  width: 100%;
+  height: 1rem;
+}
+
+.tab_li .item1 .publicize .publicize_words span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 1rem;
+  font-size: .5867rem;
+  font-weight: 900;
+  color: black;
+}
+
+.tab_li .item1 .publicize .picture,
+.clan,
+.constest {
+  width: 33%;
+  height: 3rem;
+}
+
+.tab_li .item1 .publicize .icon {
+  font-family: 'icomoom';
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  color: black;
+}
+
+.tab_li .item1 .publicize div .toSay {
+  display: block;
+  padding-top: .2667rem;
+  width: 100%;
+  height: 2rem;
+  font-size: .2933rem;
+  text-align: center;
+}
+
+.tab_li .item1 .publicize .picture .icon {
+  background: url(../images/pen.png) no-repeat center;
+}
+
+.tab_li .item1 .publicize .clan .icon {
+  background: url(../images/chat.png) no-repeat center;
+}
+
+.tab_li .item1 .publicize .constest .icon {
+  background: url(../images/pig.png) no-repeat center;
+}
+
+/* 编辑推荐 */
+.tab_li .item1 div .page_banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 5.3333rem;
+}
+
+.tab_li .item1 div .zhanshi1 {
+  background: url(../images/recommend_bg.png) no-repeat 50%;
+}
+
+.tab_li .item1 div .zhanshi2 {
+  background: url(../images/contest_bg.png) no-repeat 50%;
+}
+
+.tab_li .item1 div .zhanshi3 {
+  background: url(../images/tribe_bg.png) no-repeat 50%;
+}
+
+.tab_li .item1 div .page_banner h2 {
+  display: block;
+  margin-top: 20px;
+  font-size: .6667rem;
+  font-weight: bold;
+  color: white;
+}
+
+.tab_li .item1 div .zhaopian_tuijian .page_tiper {
+  height: 2.7467rem;
+  padding: .4267rem 0;
+}
+
+.tab_li .item1 div .zhaopian_tuijian .page_tiper h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.tab_li .item1 div .zhaopian_tuijian .page_tiper p {
+  text-align: center;
+  font-size: 18px;
+  margin: .1333rem 0 .32rem;
+}
+
+.tab_li .item1 div .zhaopian_tuijian .page_tiper div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: .64rem;
+}
+
+.tab_li .item1 div .zhaopian_tuijian .page_tiper div a {
+  display: inline-block;
+  width: 2.1067rem;
+  line-height: .64rem;
+  border-radius: .32rem;
+  font-size: .2133rem;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+/* 部落页面 */
+.tab_li .item4 .index_Img {
+  position: relative;
+  width: 100%;
+  height: 8rem;
+}
+
+.tab_li .item4 .index_Img img {
+  width: 100%;
+  height: 8rem;
+}
+
+.tab_li .item4 .index_Img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/bolang.png);
+}
+
+.tab_li .item4 .index_Img .index_Img_hello {
+  z-index: 1;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  width: 30%;
+  height: 50%;
+}
+
+.tab_li .item4 .index_Img .index_Img_hello .index_Img_hello_say {
+  display: block;
+  width: 100%;
+  height: 40%;
+  font-size: 45px;
+  line-height: 100%;
+  font-weight: 900;
+  color: white;
+}
+
+.tab_li .item4 .index_Img .index_Img_hello p {
+  font-size: 16px;
+  color: white;
+}
+
+.tab_li .item4 .buluo_box {
+  padding: .2667rem 3% 0;
+  width: 100%;
+  height: 6.8267rem;
+}
+
+.tab_li .item4 .buluo_box .buluo_left,
+.buluo_right {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.tab_li .item4 .buluo_box .buluo_left {
+  position: relative;
+}
+
+.tab_li .item4 .buluo_box .buluo_left .floor1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.9467rem;
+  height: 4.9467rem;
+}
+
+.tab_li .item4 .buluo_box .buluo_left .floor2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 4.9467rem;
+  height: 4.9467rem;
+}
+
+.tab_li .item4 .buluo_box .buluo_right .part1,
+.part2 {
+  padding-left: 100px;
+  width: 100%;
+  height: 50%;
+}
+
+.tab_li .item4 .buluo_box .buluo_right .part1 div {
+  width: 4.72rem;
+}
+
+.tab_li .item4 .buluo_box .buluo_right h2 {
+  height: .56rem;
+  font-size: .4rem;
+  font-weight: 600;
+  line-height: .56rem;
+  margin: 0 0 20px;
+  color: black;
+}
+
+.tab_li .item4 .buluo_box .buluo_right p {
+  height: .32rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: .32rem;
+  margin: 0 0 10px;
+}
+
+.tab_li .item4 .buluo_box .buluo_right h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0870d1;
+  line-height: 28px;
+  margin: 0 0 10px;
+}
+
+/* 部落榜单 */
+.tab_li .item4 .buluo_top {
+  width: 100%;
+  margin: 100px 0;
+  padding: 0 3%;
+}
+
+.tab_li .item4 .buluo_top h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: .56rem;
+  font-size: .4rem;
+  font-weight: 600;
+  line-height: .56rem;
+  margin: 0 0 20px;
+  color: black;
+}
+
+.tab_li .item4 .buluo_top .buluo_top10 {
+  width: 100%;
+  background-color: #f7f8fa;
+}
+
+.tab_li .item4 .buluo_top10 .buluo_li {
+  display: flex;
+  margin: .9333rem 5% 0;
+  width: 90%;
+  height: 1.7333rem;
+}
+
+.tab_li .item4 .buluo_li .buluo_name {
+  display: flex;
+  flex-grow: 3;
+  flex-shrink: 1;
+  flex-basis: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 6.1333rem;
+  height: 1.4933rem;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.tab_li .item4 .buluo_li .buluo_name a img {
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 16px;
+  width: 1.4933rem;
+  height: 1.4933rem;
+}
+
+.tab_li .item4 .buluo_li .buluo_name .buluo_name_more {
+  width: 4.4133rem;
+  height: 1.0533rem;
+}
+
+.tab_li .item4 .buluo_li .buluo_name .buluo_name_more .buluo_name_warpper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 6px;
+}
+
+.tab_li .item4 .buluo_li .buluo_name_warpper .to_mark {
+  display: inline-block;
+  width: .76rem;
+  flex-basis: .76rem;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ccc;
+  line-height: 20px;
+  border-radius: 10px;
+  background-color: #0870d1;
+  margin-right: 6px;
+}
+
+.tab_li .item4 .buluo_li .buluo_name_warpper .buluo_name_name {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  line-height: 24px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.tab_li .item4 .buluo_li .buluo_name .buluo_name_more .buluo_info {
+  font-size: 14px;
+  font-weight: 400;
+  color: #525558;
+  line-height: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  margin: 0 0 12px;
+}
+
+.tab_li .item4 .buluo_li .buluo_name .buluo_name_more .buluo_data {
+  font-style: 12px;
+  font-weight: 400;
+  color: #6d7378;
+  line-height: 17px;
+}
+
+.tab_li .item4 .buluo_li .buluo_name .buluo_name_more .buluo_data span {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+.tab_li .item4 .buluo_li .buluo_photo {
+  max-width: 770px;
+  height: 130px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.tab_li .item4 .buluo_li .buluo_photo .works_item {
+  display: inline-block;
+  width: fit-content;
+  height: 100%;
+  margin: 0 6px 0 0;
+}
+
+.tab_li .item4 .buluo_li .buluo_photo .works_item img {
+  width: 130px;
+  height: 130px;
+}

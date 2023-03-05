@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/hotpice.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="../jQuery/jQuery.mini.js"></script>
+</head>
+
+<body>
+  <div class="tab w" id="table">
+    <!-- 头部导航 -->
+    <div class="tab_head w">
+      <div class="xuanxiang"><a href="index.html"><span class="words">首页</span></a></div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(1)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">发现</span></a>
+        <ul v-show="navIndex == 1">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="hotpice.html"><span
+                class="words">热门</span></a></li>
+          <li><a href="hotpice.html"><span class="words">排名上升</span></a></li>
+          <li><a href="hotpice.html"><span class="words">新作</span></a></li>
+          <li><a href="hotpice.html"><span class="words">编辑推荐</span></a></li>
+          <li><a href="hotpice.html"><span class="words">影集</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="hotpice.html"><span
+                class="words">专栏</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(2)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">摄影师</span></a>
+        <ul v-show="navIndex == 2">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="grapher.html"><span
+                class="words">推荐摄影师</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="grapher.html"><span
+                class="words">推荐点评人</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="xuanxiang"><a href="buluo.html"><span class="words">部落</span></a></div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(4)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">活动</span></a>
+        <ul v-show="navIndex == 4">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="#"><span
+                class="words">大赛</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="#"><span
+                class="words">任务</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(5)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">售图</span></a>
+        <ul v-show="navIndex == 5">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="sell.html"><span
+                class="words">关于售图</span></a></li>
+          <li><a href="sell.html"><span class="words">如何签约</span></a></li>
+          <li><a href="sell.html"><span class="words">图库要求</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="sell.html"><span
+                class="words">稿费收益</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="searchbox">
+        <input type="search" name="" id="input" class="form-control" value="" required="required"
+          placeholder="搜索作品/摄影师/活动/部落">
+      </div>
+      <div class="theUser">
+        <div class="login_box">
+          <a class="login" href="login.html">登陆</a>
+        </div>
+        <div class="signup_box">
+          <a class="signup" href="signup.html">注册</a>
+        </div>
+      </div>
+    </div>
+    <div class="head_info">
+      <ul class="choose">
+        <li class="hot_word"><a href="#"><span class="txt">热门</span></a></li>
+        <li class="hot_word"><a href="#"><span class="txt">排行上升</span></a></li>
+        <li class="hot_word"><a href="#"><span class="txt">新作</span></a></li>
+        <li class="hot_word"><a href="#"><span class="txt">编辑推荐</span></a></li>
+        <li class="hot_word"><a href="#"><span class="txt">影集</span></a></li>
+        <li class="hot_word"><a href="#"><span class="txt">专栏</span></a></li>
+      </ul>
+    </div>
+    <!-- 头部导航结束 -->
+    <!-- 页面主体 -->
+    <div class="photo_box">
+      <ul>
+        <li class="phoNum" v-for="(item, phoIndex) in photos">
+          <img :src="item" :key="phoIndex" alt="">
+        </li>
+      </ul>
+    </div>
+    <!-- 页面主体结束 -->
+  </div>
+  <script>
+    var table = new Vue({
+      el: '#table',
+      data: {
+        imgArr: [
+          "images/index_img1.jpeg",
+          "images/buluo.png"
+        ],
+        photos: [
+          "upload/1.jpeg",
+          "upload/2.jpeg",
+          "upload/3.jpeg",
+          "upload/4.jpeg",
+          "upload/5.jpeg",
+          "upload/6.jpeg",
+          "upload/7.jpeg",
+          "upload/8.jpeg",
+          "upload/9.jpeg",
+          "upload/10.jpeg",
+          "upload/11.jpeg",
+          "upload/12.jpeg",
+          "upload/13.jpeg",
+          "upload/14.jpeg",
+          "upload/15.jpeg",
+          "upload/16.jpeg",
+          "upload/17.jpeg",
+          "upload/18.jpeg",
+          "upload/19.jpeg",
+          "upload/20.jpeg",
+          "upload/21.jpeg",
+          "upload/22.jpeg",
+          "upload/23.jpeg",
+          "upload/24.jpeg",
+          "upload/25.jpeg",
+          "upload/26.jpeg",
+          "upload/27.jpeg",
+          "upload/28.jpeg",
+          "upload/29.jpeg",
+          "upload/30.jpeg",
+        ],
+        navIndex: 0,
+        phoIndex: 0
+      },
+      methods: {
+        navmouseover: function (index) {
+          this.navIndex = index;
+        },
+        navmouseout: function (index) {
+          this.navIndex = index;
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

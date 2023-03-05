@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/commen.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="../jQuery/jQuery.mini.js"></script>
+</head>
+
+<body>
+  <div class="tab w" id="table">
+    <!-- 头部导航 -->
+    <div class="tab_head w">
+      <div class="xuanxiang"><a href="index.html"><span class="words">首页</span></a></div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(1)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">发现</span></a>
+        <ul v-show="navIndex == 1">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="hotpice.html"><span
+                class="words">热门</span></a></li>
+          <li><a href="hotpice.html"><span class="words">排名上升</span></a></li>
+          <li><a href="hotpice.html"><span class="words">新作</span></a></li>
+          <li><a href="hotpice.html"><span class="words">编辑推荐</span></a></li>
+          <li><a href="hotpice.html"><span class="words">影集</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="hotpice.html"><span
+                class="words">专栏</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(2)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">摄影师</span></a>
+        <ul v-show="navIndex == 2">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="grapher.html"><span
+                class="words">推荐摄影师</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="grapher.html"><span
+                class="words">推荐点评人</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="xuanxiang"><a href="buluo.html"><span class="words">部落</span></a></div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(4)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">活动</span></a>
+        <ul v-show="navIndex == 4">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="#"><span
+                class="words">大赛</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="#"><span
+                class="words">任务</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="xuanxiang" v-on:mouseenter="navmouseover(5)" v-on:mouseleave="navmouseout(0)">
+        <a href="#"><span class="words to_More">售图</span></a>
+        <ul v-show="navIndex == 5">
+          <li style="border-top-left-radius: 10px; border-top-right-radius: 13px;"><a href="sell.html"><span
+                class="words">关于售图</span></a></li>
+          <li><a href="sell.html"><span class="words">如何签约</span></a></li>
+          <li><a href="sell.html"><span class="words">图库要求</span></a></li>
+          <li style="border-bottom-left-radius: 10px; border-bottom-right-radius:13px;"><a href="sell.html"><span
+                class="words">稿费收益</span></a></li>
+          <div class="triangle"></div>
+        </ul>
+      </div>
+      <div class="theUser">
+        <div class="login_box">
+          <a class="login" href="login.html">登陆</a>
+        </div>
+        <div class="signup_box">
+          <a class="signup" href="signup.html">注册</a>
+        </div>
+      </div>
+    </div>
+    <!-- 头部导航结束 -->
+    <!-- 页面主体 -->
+    <div class="tab_li w">
+      <div class="item item1">
+        <div class="index_Img">
+          <img :src="imgArr[0]" alt="">
+          <div class="index_Img_hello">
+            <span class="index_Img_hello_say">让美好触手可及！</span>
+            <a href="login.html" class="index_Img_hello_login">加入我们</a>
+          </div>
+        </div>
+        <div class="publicize w">
+          <div class="publicize_words">
+            <span>是什么让我们与众不同</span>
+          </div>
+          <div class="picture fl">
+            <div class="icon"></div>
+            <span class="toSay">
+              展现你自己 <br>
+              建立你的品牌 <br>
+              作品云盘储存 <br>
+            </span>
+          </div>
+          <div class="clan fl">
+            <div class="icon"></div>
+            <span class="toSay">
+              在摄影社区互动 <br>
+              与全球摄影师建立联系 <br>
+              提高审美宇摄影技巧 <br>
+            </span>
+          </div>
+          <div class="constest fl">
+            <div class="icon"></div>
+            <span class="toSay">
+              发现美图获得灵感 <br>
+              让作品产生价值 <br>
+              卖图赚收益 <br>
+            </span>
+          </div>
+        </div>
+        <div>
+          <div class="page_banner zhanshi1">
+            <img src="images/recommend.png" alt="">
+            <h2>编辑推荐</h2>
+          </div>
+          <div class="zhaopian_tuijian w">
+            <div class="page_tiper">
+              <h3>没灵感？来看编辑推荐啊！</h3>
+              <p>查看编辑精选图片，获取创作灵感</p>
+              <div>
+                <a href="#">浏览编辑推荐</a>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div class="page_banner zhanshi2">
+            <img src="images/contest.png" alt="">
+            <h2>活动</h2>
+          </div>
+          <div class="zhaopian_tuijian w">
+            <div class="page_tiper">
+              <h3>众多活动就差你了！</h3>
+              <p>投稿摄影比赛活动，获得500px的专属流量推荐以及丰富奖品</p>
+              <div>
+                <a href="#">更多活动</a>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div class="page_banner zhanshi3">
+            <img src="images/tribe.png" alt="">
+            <h2>部落</h2>
+          </div>
+          <div class="zhaopian_tuijian w">
+            <div class="page_tiper">
+              <h3>加入部落，找到组织</h3>
+              <p>加入部落，给自己找到归属。创建部落，为他人创造归属</p>
+              <div>
+                <a href="buluo.html">更多部落</a>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 页面主体结束 -->
+  </div>
+  <script>
+    var table = new Vue({
+      el: '#table',
+      data: {
+        imgArr: [
+          "images/index_img1.jpeg",
+          "images/buluo.png"
+        ],
+        navIndex: 0,
+      },
+      methods: {
+        navmouseover: function (index) {
+          this.navIndex = index;
+        },
+        navmouseout: function (index) {
+          this.navIndex = index;
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
